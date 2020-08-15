@@ -4,6 +4,7 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  text-align: center;
 }
 
 .clr {
@@ -12,6 +13,9 @@
 
 ol {
   list-style: none;
+  overflow: hidden;
+  position: relative;
+  left: 30%;
 }
 
 li {
