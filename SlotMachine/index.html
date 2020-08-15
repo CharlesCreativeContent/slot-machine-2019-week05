@@ -1,15 +1,28 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
   <meta charset="utf-8">
+  <title>toDo List</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-<ol class="clr">
-  <li><img id="slot1" src="https://placekitten.com/200/200" /></li>
-  <li><img id="slot2" src="https://placekitten.com/200/200" /></li>
-  <li><img id="slot3" src="https://placekitten.com/200/200" /></li>
-</ol>
-<button onclick="render()" class="clr">Render</button>
-<button onclick="play()">Play</button>
+  <ol>
+    <li><img id="slot1" src="https://placekitten.com/200/200" /></li>
+    <li><img id="slot2" src="https://placekitten.com/200/200" /></li>
+    <li><img id="slot3" src="https://placekitten.com/200/200" /></li>
+  </ol>
+  <h1 id="current">Current Bet: $5</h1>
+  <h2 id="money">Money: $1000</h2>
+  <br>
+  <button onclick="min()">Min</button>
+  <button onclick="betMinus5()">Bet -$5</button>
+  <button onclick="bet5()">Bet +$5</button>
+  <button onclick="max()">Max</button>
+  <br>
+  <button class="clr" id="play" onclick="render()">Play</button>
+  <script src="js/main.js"></script>
 </body>
+
 </html>
