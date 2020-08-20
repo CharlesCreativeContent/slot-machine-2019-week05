@@ -1,24 +1,20 @@
-# 🎰 Week05 Bootcamp2019 Project: Slot Machine
+# Slot Machine Simulation
+A HTML5, CSS3, and Vanilla Javascript Slot Machine. This app has several features including an animated slot reel, with 6 items per reel and 3 reels. User can bet min or max and have their total update.
 
-### Goal: Build a Simple Slot Machine
+**Link to project:** https://codepen.io/ShawnBasquiat/full/JjXGoqd
 
-Build a simple slot machine with minimum 5 items per reel and 3 reels - user should be able to bet min or max and have their total update
+![alt tag](https://i.imgur.com/2Awex23.png)
 
-### How to submit your code for review:
+## How It's Made:
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+**Tech used:** HTML5, CSS3, JavaScript
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+My learning was focused on animation versus setInterval() function performance. I made a sliding reel animation using a setInterval() instead of a standard transformation or animation. Required alot more math than the standard route, but still worked.
+
+## Optimizations
+
+Using setInterval() to create an animation effect seems to not only stall some of my later functions but also, clearing the interval and getting the effect to stop was imprecise. Would probably go with a standard transformation if I was coding this again.
+
+## Lessons Learned:
+
+Don't reinvent the wheel. SetInterval() can be used to update content position, but it would probably be more customizable if a transformation or animation was implemented.
